@@ -24,5 +24,6 @@ public class DicewareController {
   String [] get(@RequestParam(
       value = "length",defaultValue = "6") int length){
     return generator.passphrase(length);
+    //generates x length
   }
 }
