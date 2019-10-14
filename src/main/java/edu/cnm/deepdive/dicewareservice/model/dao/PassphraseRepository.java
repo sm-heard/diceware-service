@@ -4,7 +4,7 @@ import edu.cnm.deepdive.dicewareservice.model.entity.Passphrase;
 import java.util.Optional;
 import org.springframework.data.repository.CrudRepository;
 
-public interface PassPhraseRepository extends CrudRepository<Passphrase,Long> {
+public interface PassphraseRepository extends CrudRepository<Passphrase, Long> {
 
   Optional<Passphrase> getFirstByKey(String key);
 

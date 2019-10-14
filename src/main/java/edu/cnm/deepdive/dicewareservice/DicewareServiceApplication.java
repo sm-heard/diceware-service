@@ -18,12 +18,13 @@ public class DicewareServiceApplication {
   }
 
   @Bean
-  public ResourceBundle bundle(){
+  public Random random() {
+    return new SecureRandom();
+  }
+
+  @Bean
+  public ResourceBundle bundle() {
     return ResourceBundle.getBundle("wordlist");
   }
 
-@Bean
-  public Random random(){
-    return new SecureRandom();
-}
 }

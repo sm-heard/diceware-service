@@ -29,3 +29,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+/passphrase_db
+derby.log
