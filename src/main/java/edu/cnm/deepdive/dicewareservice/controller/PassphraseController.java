@@ -92,7 +92,7 @@ public class PassphraseController {
 
   @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
   public Iterable<Passphrase> getAll() {
-    return passphraseRepository.getAllByOrderByIdAsc();
+    return passphraseRepository.getAllByOrderByKeyAsc();
   }
 
   @ResponseStatus(HttpStatus.NOT_FOUND)
